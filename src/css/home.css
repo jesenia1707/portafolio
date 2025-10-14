@@ -1,0 +1,38 @@
+.home-container {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f6); /* tonos rosas suaves */
+  min-height: 100vh;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 5px solid #ffb6c1;
+}
+
+h1 {
+  color: #c2185b;
+}
+
+h4 {
+  color: #e91e63;
+}
+
+.btn-light {
+  background-color: #f8bbd0;
+  border: none;
+  color: #fff;
+}
+
+.btn-light:hover {
+  background-color: #f48fb1;
+}
+
+.btn-dark {
+  background-color: #880e4f;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #ad1457;
+}
