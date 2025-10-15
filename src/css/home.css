@@ -36,3 +36,8 @@ h4 {
 .btn-dark:hover {
   background-color: #ad1457;
 }
+.social-links a:hover svg {
+  transform: scale(1.2);
+  color: #c2185b !important;
+  transition: all 0.3s ease;
+}

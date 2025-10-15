@@ -1,43 +1,24 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../css/home.css'
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
 
-function Header() {
+const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
-      <div className="container">
-        <a className="navbar-brand fw-bold text-rosa" href="#">
-          🌸 Jesenia Pardo Díaz
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    <Navbar expand="lg" bg="light" className="shadow-sm px-4">
+      <Navbar.Brand href="/" className="fw-bold" style={{ color: "#c2185b" }}>
+        Portafolio
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ms-auto align-items-center">
+          <Nav.Link href="/">Inicio</Nav.Link>
+          <Nav.Link href="/proyectos">Proyectos</Nav.Link>
+          <Nav.Link href="/noticias">Noticias</Nav.Link>
+          <Nav.Link href="/contacto">Contacto</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
 
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link text-rosa" href="#inicio">Inicio</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-rosa" href="#proyectos">Proyectos</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-rosa" href="#noticias">Noticias</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-rosa" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  )
-}
-
-export default Header
+export default Header;
 

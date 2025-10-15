@@ -3,6 +3,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import './css/home.css'
 import noticiasData from './assets/noticias.json'
+import jeseniaImg from './assets/jesenia.png' // ✅ tu imagen real
+import { FaFacebook, FaGithub } from "react-icons/fa";
+
 
 function App() {
   const [noticias, setNoticias] = useState([])
@@ -15,39 +18,57 @@ function App() {
     <div className="app-container text-center">
       <Header />
 
-      {/* Sección de Introducción */}
-      <section className="intro-section py-5">
+      {/* 🌸 Sección de Introducción */}
+      <section className="intro-section py-5" style={{ backgroundColor: "#fff5f8" }}>
+        {/* ✅ Imagen centrada y reemplaza vite.svg */}
         <img
-          src="/vite.svg" // aquí puedes reemplazar con tu foto real dentro de /src/assets
+          src={jeseniaImg}
           alt="Jesenia Pardo Díaz"
-          className="rounded-circle mb-3 perfil-img"
-          width="150"
+          className="rounded-circle mb-3 perfil-img shadow-lg"
+          width="200"
+          style={{
+            border: "5px solid #ff80b3",
+            objectFit: "cover",
+            height: "200px",
+          }}
         />
-        <h1 className="fw-bold text-rosa">Jesenia Pardo Díaz</h1>
-        <p className="bio-text">
+        <h1 className="fw-bold text-rosa mt-3">Jesenia Pardo Díaz</h1>
+        <p className="bio-text mt-3" style={{ maxWidth: "700px", margin: "0 auto" }}>
           Soy estudiante de Ingeniería en Informática en Duoc UC, apasionada por el desarrollo web,
           la tecnología y la innovación digital. Me encanta aprender y crear soluciones que mezclen
           creatividad con funcionalidad.
         </p>
 
-        <div className="social-links mt-3">
-          <a href="https://www.facebook.com/jessy.diaz.52493" className="btn btn-rosa mx-2" target="_blank">
-            Facebook
-          </a>
-          <a href="https://github.com/jesenia1707" className="btn btn-rosa mx-2" target="_blank">
-            GitHub
-          </a>
-        </div>
+       {/* 🌷 Íconos de redes sociales */}
+  <div className="social-links d-flex justify-content-center gap-4 mt-4">
+   <a
+    href="https://www.facebook.com/jessy.diaz.52493"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#4267B2", fontSize: "2.2rem" }}
+   >
+    <FaFacebook />
+    </a>
+    <a
+    href="https://github.com/jesenia1707"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#333", fontSize: "2.2rem" }}
+   >
+    <FaGithub />
+    </a>
+  </div>
+
       </section>
 
       {/* 🌸 Sección de Proyectos */}
-      <section className="projects-section py-5">
+      <section className="projects-section py-5" style={{ backgroundColor: "#ffe6f0" }}>
         <h2 className="text-rosa mb-4">Mis Proyectos</h2>
         <div className="container">
           <div className="row g-4">
             {[1, 2, 3].map((p) => (
               <div className="col-md-4" key={p}>
-                <div className="card project-card h-100">
+                <div className="card project-card h-100 shadow-sm">
                   <img
                     src={`https://via.placeholder.com/300x200?text=Proyecto+${p}`}
                     className="card-img-top"
@@ -69,12 +90,12 @@ function App() {
         </div>
       </section>
 
-      {/* Sección de Noticias */}
-      <section className="news-section py-5">
+      {/* 🌸 Sección de Noticias */}
+      <section className="news-section py-5" style={{ backgroundColor: "#fff5f8" }}>
         <h2 className="text-rosa mb-4">Noticias</h2>
         <div className="container">
           {noticias.map((n, index) => (
-            <div key={index} className="news-card p-3 mb-3">
+            <div key={index} className="news-card p-3 mb-3 shadow-sm">
               <h4 className="text-rosa">{n.titulo}</h4>
               <small className="text-muted">{n.fecha}</small>
               <p>{n.contenido}</p>
@@ -89,5 +110,3 @@ function App() {
 }
 
 export default App
-
-

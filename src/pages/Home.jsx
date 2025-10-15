@@ -1,27 +1,38 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaFacebook, FaGithub } from "react-icons/fa";
-import "../index.css"; // para estilos globales
+import jeseniaImg from "../assets/jesenia.png"; // ✅ Asegúrate de que esta ruta sea correcta
+import "../index.css";
 import "./Home.css";
-
 
 const Home = () => {
   return (
-    <Container fluid className="home-container text-center py-5">
+    <Container
+      fluid
+      className="home-container text-center py-5"
+      style={{ backgroundColor: "#ffe6f2", minHeight: "100vh" }}
+    >
       <Row className="justify-content-center align-items-center">
-        <Col md={4}>
+        <Col md={6} className="d-flex flex-column align-items-center">
           <img
-            src="/jesenia.png"
+            src={jeseniaImg}
             alt="Jesenia Pardo Díaz"
-            className="img-fluid rounded-circle shadow-lg profile-img"
+            className="img-fluid rounded-circle shadow-lg mb-4"
+            style={{
+              width: "220px",
+              height: "220px",
+              objectFit: "cover",
+              border: "5px solid #ff80b3",
+            }}
           />
-        </Col>
-        <Col md={6} className="text-md-start text-center mt-4 mt-md-0">
           <h1 className="fw-bold text-dark">Jesenia Pardo Díaz</h1>
-          <h4 className="text-muted">Estudiante de Ingeniería en Informática - Duoc UC</h4>
-          <p className="mt-3 fs-5">
-            Soy una persona apasionada por la tecnología, el desarrollo web y la innovación digital.
-            Me encanta aprender, crear soluciones prácticas y trabajar en proyectos que combinan creatividad con funcionalidad.
+          <h4 className="text-muted">
+            Estudiante de Ingeniería en Informática - Duoc UC
+          </h4>
+          <p className="mt-3 fs-5" style={{ maxWidth: "700px" }}>
+            Soy una persona apasionada por la tecnología, el desarrollo web y la
+            innovación digital. Me encanta aprender, crear soluciones prácticas
+            y trabajar en proyectos que combinan creatividad con funcionalidad.
           </p>
           <div className="mt-4">
             <Button
