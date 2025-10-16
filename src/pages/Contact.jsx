@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaWhatsapp } from "react-icons/fa";
+import BackButton from "../components/BackButton";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -55,7 +56,7 @@ export default function Contact() {
 
   return (
     <section
-      className="py-5"
+      className="py-5 position-relative"
       style={{
         backgroundColor: "#fff0f6",
         minHeight: "90vh",
@@ -64,6 +65,11 @@ export default function Contact() {
         alignItems: "center",
       }}
     >
+      {/* 🔙 BOTÓN VOLVER ATRÁS */}
+      <div style={{ position: "absolute", top: "20px", left: "20px" }}>
+        <BackButton />
+      </div>
+
       <div
         className="container shadow-lg rounded"
         style={{
@@ -191,6 +197,14 @@ export default function Contact() {
               style={{ color: "#ff80b3" }}
             >
               <FaGithub />
+            </a>
+            <a
+              href="https://wa.me/56986369552"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#25D366" }}
+            >
+              <FaWhatsapp />
             </a>
           </div>
         </div>

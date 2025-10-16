@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
+import BackButton from "../components/BackButton";
 
 import bioImg from "../assets/bioacp.png"; // portada BioACP
 import perfulandiaImg from "../assets/perfulandia.png"; // portada Perfulandia
@@ -13,7 +14,7 @@ const proyectos = [
     description:
       "Proyecto enfocado en optimizar el acceso al metro mediante tecnología biométrica, reduciendo tiempos de espera y mejorando la seguridad.",
     tech: "React · UX/UI · Ciberseguridad",
-    link: "/files/BioACP.pptx", // 📎 el enlace a tu PPT
+    link: "/files/BioACP.pptx",
   },
   {
     id: 2,
@@ -42,6 +43,11 @@ export default function Proyectos() {
       className="py-5"
       style={{ backgroundColor: "#fff5f8", minHeight: "100vh" }}
     >
+      {/* 🔙 BOTÓN VOLVER ATRÁS */}
+      <div style={{ position: "absolute", top: "20px", left: "20px" }}>
+        <BackButton />
+      </div>
+
       <div className="container">
         <h2 className="fw-bold text-center mb-5" style={{ color: "#c2185b" }}>
           Proyectos Realizados
