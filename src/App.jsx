@@ -24,18 +24,18 @@ function App() {
       <div className="app-container text-center">
         <Header />
 
-        {/* 🌸 RUTAS */}
+        {/*  RUTAS */}
         <Routes>
-          {/* 🏠 Página principal */}
+          {/*  Página principal */}
           <Route path="/" element={<Home noticias={noticias} />} />
 
-          {/* 💻 Página de Proyectos */}
+          {/*  Página de Proyectos */}
           <Route path="/proyectos" element={<Proyectos />} />
 
-          {/* 📰 Página de Noticias */}
+          {/* Página de Noticias */}
           <Route path="/noticias" element={<Noticias />} />
 
-          {/* 📩 Página de Contacto */}
+          {/*  Página de Contacto */}
           <Route path="/contacto" element={<Contact />} />
         </Routes>
 

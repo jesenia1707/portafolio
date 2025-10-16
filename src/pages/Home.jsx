@@ -52,12 +52,12 @@ const Home = ({ noticias = [] }) => {
             Estudiante de Ingeniería en Informática - Duoc UC
           </h4>
           <p className="mt-3 fs-5" style={{ maxWidth: "700px" }}>
-            Soy una persona apasionada por la tecnología, el desarrollo web y la
-            innovación digital. Me encanta aprender, crear soluciones prácticas
-            y trabajar en proyectos que combinan creatividad con funcionalidad.
+            Actualmente estoy comenzando mi camino en el área de la informática.
+             Me motiva aprender sobre desarrollo web y tecnologías digitales, 
+             y quiero seguir mejorando mis habilidades con cada proyecto que realizo.
           </p>
 
-          {/* 🌷 Íconos de redes sociales */}
+          {/*  Íconos de redes sociales */}
           <div className="social-links d-flex justify-content-center gap-4 mt-4">
             <a
               href="https://www.facebook.com/jessy.diaz.52493"
@@ -79,7 +79,7 @@ const Home = ({ noticias = [] }) => {
         </Col>
       </Row>
 
-      {/* 💻 SECCIÓN DE PROYECTOS */}
+      {/*  SECCIÓN DE PROYECTOS */}
       <section
         className="projects-section py-5"
         style={{ backgroundColor: "#ffe6f0" }}
@@ -121,7 +121,7 @@ const Home = ({ noticias = [] }) => {
         </Row>
       </section>
 
-      {/* 📰 SECCIÓN DE NOTICIAS */}
+      {/* SECCIÓN DE NOTICIAS */}
       <section
         className="news-section py-5"
         style={{ backgroundColor: "#fff5f8" }}
