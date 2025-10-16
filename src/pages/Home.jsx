@@ -3,7 +3,8 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import jeseniaImg from "../assets/jesenia.png"; // ✅ Asegúrate de que esta ruta sea correcta
 import "../index.css";
-import "./Home.css";
+import "../css/Home.css";
+
 
 const Home = () => {
   return (

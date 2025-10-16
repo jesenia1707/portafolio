@@ -1,0 +1,21 @@
+
+[
+  {
+    "titulo": "Nuevo Proyecto Web con React",
+    "fecha": "2025-09-10",
+    "contenido": "He lanzado un nuevo proyecto web desarrollado con React y Vite, donde implementé componentes reutilizables y diseño responsive.",
+    "imagen": "https://via.placeholder.com/600x300?text=Proyecto+React"
+  },
+  {
+    "titulo": "Certificación en Desarrollo Frontend",
+    "fecha": "2025-08-25",
+    "contenido": "Completé una certificación en desarrollo frontend, reforzando mis habilidades en HTML, CSS, JavaScript y React.",
+    "imagen": "https://via.placeholder.com/600x300?text=Certificacion+Frontend"
+  },
+  {
+    "titulo": "Participación en Hackathon Duoc UC",
+    "fecha": "2025-07-15",
+    "contenido": "Participé en una hackathon organizada por Duoc UC donde desarrollamos una app innovadora enfocada en sostenibilidad.",
+    "imagen": "https://via.placeholder.com/600x300?text=Hackathon+Duoc+UC"
+  }
+]
